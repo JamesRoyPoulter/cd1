@@ -15,8 +15,9 @@ class CountdownsController < ApplicationController
   def show
     @countdown = Countdown.find(params[:id])
     date = @countdown.countdown_date
+    @date = date
     @year = date.strftime('%Y')
-    @month = date.strftime('%m')
+    @month = date.strftime('%m').to_i - 1
     @day = date.strftime('%d')
     @hour = date.strftime('%H')
     @minute = date.strftime('%M')

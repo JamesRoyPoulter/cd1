@@ -1,21 +1,17 @@
-<p id="notice"><%= notice %></p>
-
-<div id='name'>
-  <%= @countdown.name %>
-</div>
+<b><span id="countdown"></span></b>
 
 <p>TILL</p>
 
+<div id='name'>
+	<%= @countdown.name %>
+</div>
 
-<div id='year'><%= @year %></div>
-<div id='month'><%= @month %></div>
-<div id='day'><%= @day %></div>
-<div id='hour'><%= @hour %></div>
-<div id='minute'><%= @minute %></div>
-<div id='second'><%= @second %></div>
+<div id='data'>
+	<div id='year'><%= @year %></div>
+	<div id='month'><%= @month %></div>
+	<div id='day'><%= @day %></div>
+	<div id='hour'><%= @hour %></div>
+	<div id='minute'><%= @minute %></div>
+	<div id='second'><%= @second %></div>
+</div>
 
-<p></p>
-<%= link_to 'Edit', edit_countdown_path(@countdown) %> |
-<%= link_to 'Back', countdowns_path %>
-
-<b><span id="countdown"></span></b>
