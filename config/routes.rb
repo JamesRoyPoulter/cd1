@@ -3,6 +3,6 @@ Countdowntoit::Application.routes.draw do
 
   match 'techpeaksdemoday' => 'countdowns#show', :defaults => {:id => 1}
 
-  root :to => 'countdowns#index'
+  root :to => 'countdowns#show', :defaults => {:id => 1}
 
 end
