@@ -14,8 +14,13 @@ class CountdownsController < ApplicationController
   # GET /countdowns/1.json
   def show
     @countdown = Countdown.find(params[:id])
-    @time = Time.parse((@countdown.countdown_date).to_json).utc
-    @time2 = @time.to_i*1000
+    date = @countdown.countdown_date
+    @year = date.strftime('%Y')
+    @month = date.strftime('%m')
+    @day = date.strftime('%d')
+    @hour = date.strftime('%H')
+    @minute = date.strftime('%M')
+    @second = date.strftime('%S')
 
     respond_to do |format|
       format.html # show.html.erb

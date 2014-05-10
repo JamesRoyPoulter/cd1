@@ -1,12 +1,12 @@
-grabbed = document.getElementById('two');
-grabbed = grabbed.innerHTML
-console.log(grabbed)
-
-
-
+year = document.getElementById('year').innerHTML;
+month = document.getElementById('month').innerHTML;
+day = document.getElementById('day').innerHTML;
+hour = document.getElementById('hour').innerHTML;
+minute = document.getElementById('minute').innerHTML;
+second = document.getElementById('second').innerHTML;
 
 # // set the date we're counting down to
-target_date = new Date(year, month, day, hour, minute, second, millisecond);
+target_date = new Date(year, month, day, hour, minute, second);
  
  
 # // get tag element
