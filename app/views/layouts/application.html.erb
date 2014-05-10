@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Countdowntoit</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  
+  <%= csrf_meta_tags %>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body>
+
+<%= yield %>
+<%= javascript_include_tag "application" %>
+
+
+</body>
+</html>

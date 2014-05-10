@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyString
+  countdown_date: 2014-05-09 17:35:52
+
+two:
+  name: MyString
+  description: MyString
+  countdown_date: 2014-05-09 17:35:52

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<div id='name'>
+  <%= @countdown.name %>
+</div>
+
+<p>TILL</p>
+<div id="grab" data-remote="true">
+  <%= @countdown.countdown_date %>
+</div>
+
+<p>one</p>
+<div id='one'><%= @time %></div>
+<p>two</p>
+<div id='two'><%= @time2 %></div>
+
+<p></p>
+<%= link_to 'Edit', edit_countdown_path(@countdown) %> |
+<%= link_to 'Back', countdowns_path %>
+
+<div id="countdown2">yoda</div>
+
+<div id="test">yoda</div>
+
+<b><span id="countdown"></span></b>
