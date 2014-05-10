@@ -42,10 +42,10 @@ setInterval ->
      
     # // format countdown string + set tag value.
   
-    days_span.innerHTML = '<div class="holder"><span class="number">' + days + '</span>' + '<span class="text">Days</span></div>';
-    hours_span.innerHTML = '<div class="holder"><span class="number">' + hours + '</span>' + '<span class="text">Hours</span></div>';
-    minutes_span.innerHTML = '<div class="holder"><span class="number">' + minutes + '</span>' + '<span class="text">Minutes</span></div>';
-    secs_span.innerHTML = '<div class="holder"><span class="number">' + seconds + '</span>' + '<span class="text">Seconds</span></div>';
+    days_span.innerHTML = '<div class="holder"><span class="number">' + days + '</span>' + '<span class="text">DAYS</span></div>';
+    hours_span.innerHTML = '<div class="holder"><span class="number">' + hours + '</span>' + '<span class="text">HOURS</span></div>';
+    minutes_span.innerHTML = '<div class="holder"><span class="number">' + minutes + '</span>' + '<span class="text">MINUTES</span></div>';
+    secs_span.innerHTML = '<div class="holder"><span class="number">' + seconds + '</span>' + '<span class="text">SECONDS</span></div>';
     
   
     # //countdown.innerHTML = days + "d, " + hours + "h, "
