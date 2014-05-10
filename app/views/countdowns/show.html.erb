@@ -1,17 +1,17 @@
-<b><span id="countdown"></span></b>
+<div id='container'>
+	<span id="countdown"></span>
 
-<p>TILL</p>
+	<div id='name'>
+		<p>UNTIL <%= @countdown.name %></p>
+	</div>
 
-<div id='name'>
-	<%= @countdown.name %>
+	<div id='data'>
+		<div id='year'><%= @year %></div>
+		<div id='month'><%= @month %></div>
+		<div id='day'><%= @day %></div>
+		<div id='hour'><%= @hour %></div>
+		<div id='minute'><%= @minute %></div>
+		<div id='second'><%= @second %></div>
+	</div>
+
 </div>
-
-<div id='data'>
-	<div id='year'><%= @year %></div>
-	<div id='month'><%= @month %></div>
-	<div id='day'><%= @day %></div>
-	<div id='hour'><%= @hour %></div>
-	<div id='minute'><%= @minute %></div>
-	<div id='second'><%= @second %></div>
-</div>
-

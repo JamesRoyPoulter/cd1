@@ -8,20 +8,19 @@ second = document.getElementById('second').innerHTML;
 # // set the date we're counting down to
 target_date = new Date(year, month, day, hour, minute, second);
  
- 
 # // get tag element
 countdown =  document.getElementById("countdown");
 days_span = document.createElement("SPAN");
-days_span.className = 'days';
+days_span.className = 'days top_holder';
 countdown.appendChild(days_span);
 hours_span = document.createElement("SPAN");
-hours_span.className = 'hours';
+hours_span.className = 'hours top_holder';
 countdown.appendChild(hours_span);
 minutes_span = document.createElement("SPAN");
-minutes_span.className = 'minutes';
+minutes_span.className = 'minutes top_holder';
 countdown.appendChild(minutes_span);
 secs_span = document.createElement("SPAN");
-secs_span.className = 'secs';
+secs_span.className = 'secs top_holder';
 countdown.appendChild(secs_span);
  
 # // update the tag with id "countdown" every 1 second
@@ -43,10 +42,10 @@ setInterval ->
      
     # // format countdown string + set tag value.
   
-    days_span.innerHTML = '<span>' + days + '</span>' + 'Days';
-    hours_span.innerHTML = '<span>' + hours + '</span>' + 'Hours';
-    minutes_span.innerHTML = '<span>' + minutes + '</span>' + 'Minutes';
-    secs_span.innerHTML = '<span>' + seconds + '</span>' + 'Seconds';
+    days_span.innerHTML = '<div class="holder"><span class="number">' + days + '</span>' + '<span class="text">Days</span></div>';
+    hours_span.innerHTML = '<div class="holder"><span class="number">' + hours + '</span>' + '<span class="text">Hours</span></div>';
+    minutes_span.innerHTML = '<div class="holder"><span class="number">' + minutes + '</span>' + '<span class="text">Minutes</span></div>';
+    secs_span.innerHTML = '<div class="holder"><span class="number">' + seconds + '</span>' + '<span class="text">Seconds</span></div>';
     
   
     # //countdown.innerHTML = days + "d, " + hours + "h, "

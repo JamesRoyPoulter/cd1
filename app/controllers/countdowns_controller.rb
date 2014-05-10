@@ -14,6 +14,7 @@ class CountdownsController < ApplicationController
   # GET /countdowns/1.json
   def show
     @countdown = Countdown.find(params[:id])
+    @countdown.name = @countdown.name.upcase
     date = @countdown.countdown_date
     @date = date
     @year = date.strftime('%Y')

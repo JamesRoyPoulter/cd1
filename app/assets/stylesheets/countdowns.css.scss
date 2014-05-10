@@ -2,32 +2,52 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+	color: white;
+	background-color: #000;
+	font-family: helvetica;
+	text-align: center;
+}
+
+#container {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:90em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -40em; /*set to a negative number 1/2 of your width*/
+}
+
 #data {
 	display: none;
 }
 
 #countdown {
     font-family: trebuchet ms;
-    color: #2A3435;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: #D2CFCA;
-    background: #eee;
-    padding: 2px;
+    color: #fff;
     display: inline-block;
 }
-#countdown span {
-    display: inline-block;
-    margin-left: 5px;
-    min-width: 40px;
-    text-align: center;
-    font-size: 10px;
-    font-weight: normal;
+
+.top_holder {
+	margin-right: 2em;
+	display: inline-block;
 }
-#countdown span:first-child {
-    margin-left: 0;
+
+.top_holder:last-child {
+	margin-right: 0em;
 }
-#countdown span span {
-  font-size: 18px;
+
+.number {
   display: block;
+  font-size: 8em;
+}
+
+.text {
+	font-size: 2em;
+	display: block;
+}
+
+#name {
+	margin-top: 4em;
 }
