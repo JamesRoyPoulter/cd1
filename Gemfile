@@ -6,7 +6,7 @@ gem 'rails', '3.2.17'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-
+gem 'webrick', '1.3.1'
 
 group :development do
   gem 'pry-rails'
