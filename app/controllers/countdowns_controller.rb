@@ -16,7 +16,6 @@ class CountdownsController < ApplicationController
     @countdown = Countdown.find(params[:id])
     @countdown.name = @countdown.name.upcase
     date = @countdown.countdown_date
-    @date = date
     @year = date.strftime('%Y')
     @month = date.strftime('%m').to_i - 1
     @day = date.strftime('%d')
